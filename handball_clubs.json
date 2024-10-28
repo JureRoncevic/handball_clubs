@@ -1,0 +1,702 @@
+[
+    {
+        "ClubName": "Aalborg Håndbold",
+        "Country": "Denmark",
+        "PhoneNumber": "+45 96 352030",
+        "Email": "jl@aalborghaandbold.dk",
+        "YearEstablished": 2000,
+        "HomeArena": "Sparekassen Danmark Arena",
+        "League": "Herreligaen",
+        "ChampionshipsWon": 14,
+        "Website": "www.aalborghaandbold.dk",
+        "TeamColors": {
+            "Light": "Light blue",
+            "Dark": "Red"
+        },
+        "HeadCoach": {
+            "FirstName": "Maik",
+            "LastName": "Machulla"
+        },
+        "Players": [
+            {
+                "FirstName": "Niklas",
+                "LastName": "Landin Jacobsen",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 1,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "Sebastian",
+                "LastName": "Barthold",
+                "Position": "Left Wing",
+                "JerseyNumber": 19,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Kristian",
+                "LastName": "Bjørnsen",
+                "Position": "Right Wing",
+                "JerseyNumber": 6,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Bjarki",
+                "LastName": "Jóhannsson",
+                "Position": "Left Back",
+                "JerseyNumber": 23,
+                "Nationality": "Iceland"
+            },
+            {
+                "FirstName": "Mads",
+                "LastName": "Hoxer Hangaard",
+                "Position": "Right Back",
+                "JerseyNumber": 14,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "Thomas",
+                "LastName": "Arnoldsen",
+                "Position": "Centre Back",
+                "JerseyNumber": 7,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "René",
+                "LastName": "Antonsen",
+                "Position": "Line Player",
+                "JerseyNumber": 22,
+                "Nationality": "Denmark"
+            }
+        ]
+    },
+    {
+        "ClubName": "Barça",
+        "Country": "Spain",
+        "PhoneNumber": "+34 93 4967247",
+        "Email": "xavier.ocallaghan@fcbarcelona.cat",
+        "YearEstablished": 1942,
+        "HomeArena": "Palau Blaugrana",
+        "League": "Liga Asobal",
+        "ChampionshipsWon": 185,
+        "Website": "www.fcbarcelona.cat",
+        "TeamColors": {
+            "Light": "Lime yellow",
+            "Dark": "Blue red stripped"
+        },
+        "HeadCoach": {
+            "FirstName": "Antonio Carlos",
+            "LastName": "Ortega Pérez"
+        },
+        "Players": [
+            {
+                "FirstName": "Emil",
+                "LastName": "Nielsen",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 40,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "Aitor",
+                "LastName": "Ariño Bengoechea",
+                "Position": "Left Wing",
+                "JerseyNumber": 13,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Blaz",
+                "LastName": "Janc",
+                "Position": "Right Wing",
+                "JerseyNumber": 35,
+                "Nationality": "Slovenia"
+            },
+            {
+                "FirstName": "Juan",
+                "LastName": "Palomino Morón",
+                "Position": "Left Back",
+                "JerseyNumber": 44,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Dika",
+                "LastName": "Mem",
+                "Position": "Right Back",
+                "JerseyNumber": 82,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Domen",
+                "LastName": "Makuc",
+                "Position": "Centre Back",
+                "JerseyNumber": 10,
+                "Nationality": "Slovenia"
+            },
+            {
+                "FirstName": "Luis Diogo",
+                "LastName": "Da Sousa Frade",
+                "Position": "Line Player",
+                "JerseyNumber": 20,
+                "Nationality": "Portugal"
+            }
+        ]
+    },
+    {
+        "ClubName": "HC Zagreb",
+        "Country": "Croatia",
+        "PhoneNumber": "+385 95 9999303",
+        "Email": "info@rk-zagreb.hr",
+        "YearEstablished": 1922,
+        "HomeArena": "Arena Zagreb",
+        "League": "Premijer liga",
+        "ChampionshipsWon": 76,
+        "Website": "www.rk-zagreb.hr",
+        "TeamColors": {
+            "Light": "White",
+            "Dark": "Blue"
+        },
+        "HeadCoach": {
+            "FirstName": "Andrija",
+            "LastName": "Nikolić"
+        },
+        "Players": [
+            {
+                "FirstName": "Ante",
+                "LastName": "Grbavac",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 47,
+                "Nationality": "Bosnia and Herzegovina"
+            },
+            {
+                "FirstName": "Davor",
+                "LastName": "Ćavar",
+                "Position": "Left Wing",
+                "JerseyNumber": 24,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Filip",
+                "LastName": "Glavaš",
+                "Position": "Right Wing",
+                "JerseyNumber": 10,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Niko",
+                "LastName": "Franković",
+                "Position": "Left Back",
+                "JerseyNumber": 71,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Luka Lovre",
+                "LastName": "Klarica",
+                "Position": "Right Back",
+                "JerseyNumber": 5,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Ihar",
+                "LastName": "Bialiauski",
+                "Position": "Centre Back",
+                "JerseyNumber": 44,
+                "Nationality": "Belarus"
+            },
+            {
+                "FirstName": "Adin",
+                "LastName": "Faljić",
+                "Position": "Line Player",
+                "JerseyNumber": 34,
+                "Nationality": "Bosnia and Herzegovina"
+            }
+        ]
+    },
+    {
+        "ClubName": "Kolstad Håndbold",
+        "Country": "Norway",
+        "PhoneNumber": "+47 90151568",
+        "Email": "jostein.sivertsen@kolstad-handball.no",
+        "YearEstablished": 1972,
+        "HomeArena": "Trondheim Spektrum",
+        "League": "REMA 1000-ligaen",
+        "ChampionshipsWon": 2,
+        "Website": "www.kolstad-handball.no",
+        "TeamColors": {
+            "Light": "White",
+            "Dark": "Red"
+        },
+        "HeadCoach": {
+            "FirstName": "Christian",
+            "LastName": "Berge"
+        },
+        "Players": [
+            {
+                "FirstName": "Torbjørn Sittrup",
+                "LastName": "Bergerud",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 6,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Adrian",
+                "LastName": "Aalberg",
+                "Position": "Left Wing",
+                "JerseyNumber": 7,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Sigvaldi Björn",
+                "LastName": "Gudjonsson",
+                "Position": "Right Wing",
+                "JerseyNumber": 48,
+                "Nationality": "Iceland"
+            },
+            {
+                "FirstName": "Simon",
+                "LastName": "Jeppsson",
+                "Position": "Left Back",
+                "JerseyNumber": 42,
+                "Nationality": "Sweden"
+            },
+            {
+                "FirstName": "Aksel",
+                "LastName": "Hald",
+                "Position": "Right Back",
+                "JerseyNumber": 2,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Sander",
+                "LastName": "Sagosen",
+                "Position": "Centre Back",
+                "JerseyNumber": 23,
+                "Nationality": "Norway"
+            },
+            {
+                "FirstName": "Magnus",
+                "LastName": "Gullerud",
+                "Position": "Line Player",
+                "JerseyNumber": 14,
+                "Nationality": "Norway"
+            }
+        ]
+    },
+    {
+        "ClubName": "Dinamo Bucuresti",
+        "Country": "Romania",
+        "PhoneNumber": "+40 21 2101288",
+        "Email": "office@csdinamo.ro",
+        "YearEstablished": 1953,
+        "HomeArena": "Sala Polivalentă Dinamo",
+        "League": "Liga Națională",
+        "ChampionshipsWon": 36,
+        "Website": "www.csdinamo.eu",
+        "TeamColors": {
+            "Light": "White",
+            "Dark": "Red"
+        },
+        "HeadCoach": {
+            "FirstName": "David",
+            "LastName": "Davis Camara"
+        },
+        "Players": [
+            {
+                "FirstName": "Vladimir",
+                "LastName": "Cupara",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 1,
+                "Nationality": "Serbia"
+            },
+            {
+                "FirstName": "Nicusor Andrei",
+                "LastName": "Negru",
+                "Position": "Left Wing",
+                "JerseyNumber": 24,
+                "Nationality": "Romania"
+            },
+            {
+                "FirstName": "Andrii",
+                "LastName": "Akimenko",
+                "Position": "Right Wing",
+                "JerseyNumber": 55,
+                "Nationality": "Ukraine"
+            },
+            {
+                "FirstName": "André",
+                "LastName": "Gomes",
+                "Position": "Left Back",
+                "JerseyNumber": 27,
+                "Nationality": "Portugal"
+            },
+            {
+                "FirstName": "Stanislav",
+                "LastName": "Kasparek",
+                "Position": "Right Back",
+                "JerseyNumber": 37,
+                "Nationality": "Czech Republic"
+            },
+            {
+                "FirstName": "Haukur",
+                "LastName": "Thrastarson",
+                "Position": "Centre Back",
+                "JerseyNumber": 25,
+                "Nationality": "Iceland"
+            },
+            {
+                "FirstName": "Miklós",
+                "LastName": "Rosta",
+                "Position": "Line Player",
+                "JerseyNumber": 45,
+                "Nationality": "Hungary"
+            }
+        ]
+    },
+    {
+        "ClubName": "Füchse Berlin",
+        "Country": "Germany",
+        "PhoneNumber": "+49 175 5870475",
+        "Email": "zerbe@fuechse.berlin",
+        "YearEstablished": 1891,
+        "HomeArena": "Max-Schmeling-Halle",
+        "League": "Handball-Bundesliga",
+        "ChampionshipsWon": 7,
+        "Website": "www.fuechse.berlin",
+        "TeamColors": {
+            "Light": "Pink",
+            "Dark": "Black"
+        },
+        "HeadCoach": {
+            "FirstName": "Jaron",
+            "LastName": "Siewert"
+        },
+        "Players": [
+            {
+                "FirstName": "Lasse",
+                "LastName": "Ludwig",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 1,
+                "Nationality": "Germany"
+            },
+            {
+                "FirstName": "Tim",
+                "LastName": "Freihöfer",
+                "Position": "Left Wing",
+                "JerseyNumber": 20,
+                "Nationality": "Germany"
+            },
+            {
+                "FirstName": "Hákun",
+                "LastName": "Av Teigum",
+                "Position": "Right Wing",
+                "JerseyNumber": 34,
+                "Nationality": "Faroe Islands"
+            },
+            {
+                "FirstName": "Paul",
+                "LastName": "Drux",
+                "Position": "Left Back",
+                "JerseyNumber": 95,
+                "Nationality": "Germany"
+            },
+            {
+                "FirstName": "Max",
+                "LastName": "Beneke",
+                "Position": "Right Back",
+                "JerseyNumber": 27,
+                "Nationality": "Germany"
+            },
+            {
+                "FirstName": "Nils",
+                "LastName": "Lichtlein",
+                "Position": "Centre Back",
+                "JerseyNumber": 17,
+                "Nationality": "Germany"
+            },
+            {
+                "FirstName": "Mijajlo",
+                "LastName": "Marsenić",
+                "Position": "Line Player",
+                "JerseyNumber": 93,
+                "Nationality": "Serbia"
+            }
+        ]
+    },
+    {
+        "ClubName": "Industria Kielce",
+        "Country": "Poland",
+        "PhoneNumber": "+48 785 373785",
+        "Email": "p.papaj@kielcehandball.pl",
+        "YearEstablished": 1965,
+        "HomeArena": "Hala Legionow Kielce",
+        "League": "Orlen Superliga",
+        "ChampionshipsWon": 38,
+        "Website": "www.kielcehandball.pl",
+        "TeamColors": {
+            "Light": "Yellow",
+            "Dark": "Black"
+        },
+        "HeadCoach": {
+            "FirstName": "Talant",
+            "LastName": "Dujshebaev"
+        },
+        "Players": [
+            {
+                "FirstName": "Bekir",
+                "LastName": "Čordalija",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 16,
+                "Nationality": "Bosnia and Herzegovina"
+            },
+            {
+                "FirstName": "Dylan",
+                "LastName": "Nahi",
+                "Position": "Left Wing",
+                "JerseyNumber": 99,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Benoit",
+                "LastName": "Kounkoud",
+                "Position": "Right Wing",
+                "JerseyNumber": 7,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Tomasz",
+                "LastName": "Gebala",
+                "Position": "Left Back",
+                "JerseyNumber": 48,
+                "Nationality": "Poland"
+            },
+            {
+                "FirstName": "Jorge",
+                "LastName": "Maqueda Peno",
+                "Position": "Right Back",
+                "JerseyNumber": 15,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Igor",
+                "LastName": "Karačić",
+                "Position": "Centre Back",
+                "JerseyNumber": 18,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Artsem",
+                "LastName": "Karalek",
+                "Position": "Line Player",
+                "JerseyNumber": 50,
+                "Nationality": "Belarus"
+            }
+        ]
+    },
+    {
+        "ClubName": "Veszprém HC",
+        "Country": "Hungary",
+        "PhoneNumber": "+36 30 5024547",
+        "Email": "office@handballveszprem.hu",
+        "YearEstablished": 1977,
+        "HomeArena": "Veszprem Arena",
+        "League": "Nemzeti Bajnokság I",
+        "ChampionshipsWon": 67,
+        "Website": "www.handballveszprem.hu",
+        "TeamColors": {
+            "Light": "White",
+            "Dark": "Red"
+        },
+        "HeadCoach": {
+            "FirstName": "Xavier",
+            "LastName": "Pascual Fuertes"
+        },
+        "Players": [
+            {
+                "FirstName": "Rodrigo",
+                "LastName": "Corrales Rodal",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 12,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Hugo",
+                "LastName": "Descat",
+                "Position": "Left Wing",
+                "JerseyNumber": 9,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Gasper",
+                "LastName": "Marguč",
+                "Position": "Right Wing",
+                "JerseyNumber": 24,
+                "Nationality": "Slovenia"
+            },
+            {
+                "FirstName": "Patrik",
+                "LastName": "Ligetvári",
+                "Position": "Left Back",
+                "JerseyNumber": 23,
+                "Nationality": "Hungary"
+            },
+            {
+                "FirstName": "Nedim",
+                "LastName": "Remili",
+                "Position": "Right Back",
+                "JerseyNumber": 29,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Luka",
+                "LastName": "Cindrić",
+                "Position": "Centre Back",
+                "JerseyNumber": 25,
+                "Nationality": "Croatia"
+            },
+            {
+                "FirstName": "Ludovic",
+                "LastName": "Fabregas",
+                "Position": "Line Player",
+                "JerseyNumber": 89,
+                "Nationality": "France"
+            }
+        ]
+    },
+    {
+        "ClubName": "HBC Nantes",
+        "Country": "France",
+        "PhoneNumber": "+33 6 64612242",
+        "Email": "jerome.champenois@hbcnantes.com",
+        "YearEstablished": 1953,
+        "HomeArena": "Palais des Sports de Beaulieu",
+        "League": "LNH Division 1",
+        "ChampionshipsWon": 7,
+        "Website": "www.hbcnantes.com",
+        "TeamColors": {
+            "Light": "White and purple",
+            "Dark": "Black and purple"
+        },
+        "HeadCoach": {
+            "FirstName": "Gregory",
+            "LastName": "Cojean"
+        },
+        "Players": [
+            {
+                "FirstName": "Ignacio",
+                "LastName": "Biosca García",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 30,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Pierre-Alexis",
+                "LastName": "Favril",
+                "Position": "Left Wing",
+                "JerseyNumber": 26,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Théo",
+                "LastName": "Avelange Demouge",
+                "Position": "Right Wing",
+                "JerseyNumber": 9,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Thibaud",
+                "LastName": "Briet",
+                "Position": "Left Back",
+                "JerseyNumber": 3,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Ayoub",
+                "LastName": "Abdi",
+                "Position": "Right Back",
+                "JerseyNumber": 8,
+                "Nationality": "Algeria"
+            },
+            {
+                "FirstName": "Lucas",
+                "LastName": "De la Breteche",
+                "Position": "Centre Back",
+                "JerseyNumber": 14,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Matej",
+                "LastName": "Gaber",
+                "Position": "Line Player",
+                "JerseyNumber": 15,
+                "Nationality": "Slovenia"
+            }
+        ]
+    },
+    {
+        "ClubName": "Paris Saint-Germain Handball",
+        "Country": "France",
+        "PhoneNumber": "+33 (0)1 74 314000",
+        "Email": "tomeyer@psg.fr",
+        "YearEstablished": 1941,
+        "HomeArena": "Stade Pierre de Coubertin",
+        "League": "LNH Division 1",
+        "ChampionshipsWon": 24,
+        "Website": "www.psg.fr",
+        "TeamColors": {
+            "Light": "White",
+            "Dark": "Blue"
+        },
+        "HeadCoach": {
+            "FirstName": "Raul",
+            "LastName": "Gonzalez Gutierrez"
+        },
+        "Players": [
+            {
+                "FirstName": "Jannick",
+                "LastName": "Green",
+                "Position": "Goalkeeper",
+                "JerseyNumber": 16,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "Mathieu",
+                "LastName": "Grebille",
+                "Position": "Left Wing",
+                "JerseyNumber": 20,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "David",
+                "LastName": "Balaguer Romeu",
+                "Position": "Right Wing",
+                "JerseyNumber": 19,
+                "Nationality": "Spain"
+            },
+            {
+                "FirstName": "Jacob",
+                "LastName": "Holm Tandrup",
+                "Position": "Left Back",
+                "JerseyNumber": 32,
+                "Nationality": "Denmark"
+            },
+            {
+                "FirstName": "Victor",
+                "LastName": "Crenn",
+                "Position": "Right Back",
+                "JerseyNumber": 33,
+                "Nationality": "France"
+            },
+            {
+                "FirstName": "Dani",
+                "LastName": "Baijens",
+                "Position": "Centre Back",
+                "JerseyNumber": 77,
+                "Nationality": "Netherlands"
+            },
+            {
+                "FirstName": "Luka",
+                "LastName": "Karabatić",
+                "Position": "Line Player",
+                "JerseyNumber": 22,
+                "Nationality": "France"
+            }
+        ]
+    }
+]

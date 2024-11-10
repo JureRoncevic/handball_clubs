@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" type="text/css" href="/node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h1>Rukometni klubovi</h1>
+  
+    <form id="filterForm">
+        <input type="text" id="searchInput" placeholder="Pretraži podatke...">
+        <select id="attributeSelect">
+            <option value="">All Attributes</option>
+            <option value="club_name">Club Name</option>
+            <option value="club_country">Country</option>
+            <option value="phone_number">Phone Number</option>
+            <option value="email">Email</option>
+            <option value="year_established">Year Established</option>
+            <option value="home_arena">Home Arena</option>
+            <option value="league">League</option>
+            <option value="championships_won">Championships Won</option>
+            <option value="website">Website</option>
+            <option value="light_team_color">Light Team Color</option>
+            <option value="dark_team_color">Dark Team Color</option>
+            <option value="head_coach_first">Head Coach First Name</option>
+            <option value="head_coach_last">Head Coach Last Name</option>
+            <option value="player_first_name">Player First Name</option>
+            <option value="player_last_name">Player Last Name</option>
+            <option value="player_position">Player Position</option>
+            <option value="player_jersey_number">Player Jersey Number</option>
+            <option value="player_nationality">Player Nationality</option>
+        </select>
+        <button type="submit" id="search-btn">Pretraži</button>
+    </form>
+
+   
+    <button id="exportCsvBtn">Download CSV</button>
+    <button id="exportJsonBtn">Download JSON</button>
+
+    
+    <table id="dataTable" class="display">
+        <thead>
+            <tr>
+                <th>Club Name</th>
+                <th>Country</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Year Established</th>
+                <th>Home Arena</th>
+                <th>League</th>
+                <th>Championships Won</th>
+                <th>Website</th>
+                <th>Light Team Color</th>
+                <th>Dark Team Color</th>
+                <th>Head Coach First Name</th>
+                <th>Head Coach Last Name</th>
+                <th>Player First Name</th>
+                <th>Player Last Name</th>
+                <th>Player Position</th>
+                <th>Player Jersey Number</th>
+                <th>Player Nationality</th>
+            </tr>
+        </thead>
+        <tbody id="data-table-body">
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/frontend/script.js"></script>
+</body>
+</html>

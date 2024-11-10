@@ -1,0 +1,159 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "Handball Clubs",
+    "description": "Array containing information about handball clubs",
+    "items": {
+        "type": "object",
+        "title": "Club",
+        "description": "Schema representing a handball club",
+        "required": [
+            "ClubName",
+            "Country",
+            "PhoneNumber",
+            "Email",
+            "YearEstablished",
+            "HomeArena",
+            "League",
+            "ChampionshipsWon",
+            "Website",
+            "TeamColors",
+            "HeadCoach",
+            "Players"
+        ],
+        "properties": {
+            "ClubName": {
+                "type": "string",
+                "title": "Club Name",
+                "description": "Name of the handball club"
+            },
+            "Country": {
+                "type": "string",
+                "title": "Country",
+                "description": "Country where the club is located"
+            },
+            "PhoneNumber": {
+                "type": "string",
+                "title": "Phone Number",
+                "description": "Contact phone number for the club"
+            },
+            "Email": {
+                "type": "string",
+                "title": "Email",
+                "description": "Contact email address for the club"
+            },
+            "YearEstablished": {
+                "type": "integer",
+                "title": "Year Established",
+                "description": "Year the club was established"
+            },
+            "HomeArena": {
+                "type": "string",
+                "title": "Home Arena",
+                "description": "Home arena of the club"
+            },
+            "League": {
+                "type": "string",
+                "title": "League",
+                "description": "League in which the club competes"
+            },
+            "ChampionshipsWon": {
+                "type": "integer",
+                "title": "Championships Won",
+                "description": "Number of championships won by the club"
+            },
+            "Website": {
+                "type": "string",
+                "title": "Website",
+                "description": "Website URL for the club"
+            },
+            "TeamColors": {
+                "type": "object",
+                "title": "Team Colors",
+                "description": "Team colors for the club",
+                "required": [
+                    "Light",
+                    "Dark"
+                ],
+                "properties": {
+                    "Light": {
+                        "type": "string",
+                        "title": "Light",
+                        "description": "Light color of the team uniform"
+                    },
+                    "Dark": {
+                        "type": "string",
+                        "title": "Dark",
+                        "description": "Dark color of the team uniform"
+                    }
+                }
+            },
+            "HeadCoach": {
+                "type": "object",
+                "title": "HeadCoach",
+                "description": "Information about the club's head coach",
+                "required": [
+                    "FirstName",
+                    "LastName"
+                ],
+                "properties": {
+                    "FirstName": {
+                        "type": "string",
+                        "title": "First Name",
+                        "description": "First name of the head coach"
+                    },
+                    "LastName": {
+                        "type": "string",
+                        "title": "Last Name",
+                        "description": "Last name of the head coach"
+                    }
+                }
+            },
+            "Players": {
+                "type": "array",
+                "title": "Players",
+                "description": "Array of players associated with the club",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "description": "Schema representing a player in the club",
+                    "required": [
+                        "FirstName",
+                        "LastName",
+                        "Position",
+                        "JerseyNumber",
+                        "Nationality"
+                    ],
+                    "properties": {
+                        "FirstName": {
+                            "type": "string",
+                            "title": "First Name",
+                            "description": "First name of the player"
+                        },
+                        "LastName": {
+                            "type": "string",
+                            "title": "Last Name",
+                            "description": "Last name of the player"
+                        },
+                        "Position": {
+                            "type": "string",
+                            "title": "Position",
+                            "description": "Position played by the player"
+                        },
+                        "JerseyNumber": {
+                            "type": "integer",
+                            "title": "Jersey Number",
+                            "description": "Jersey number of the player"
+                        },
+                        "Nationality": {
+                            "type": "string",
+                            "title": "Nationality",
+                            "description": "Nationality of the player"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

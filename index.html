@@ -1,0 +1,84 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ovaj skup podataka sadrži informacije o rukometnim klubovima, uključujući naziv kluba, kontakt podatke, godinu osnivanja te popis igrača. Svaki klub u skupu podataka ima jedinstveni identifikator, što omogućuje lako povezivanje s drugim informacijama. 
+    Osim osnovnih informacija o klubovima, podaci uključuju i detalje o trenerima, kao i o domaćim arenama gdje se održavaju utakmice.
+    Dodatno, skup podataka pruža uvid u ligu u kojoj klubovi igraju, broj osvojenih prvenstava, te web stranice na kojima se mogu pronaći dodatne informacije o klubovima. 
+    Također, svaki igrač unutar kluba je opisan s atributima poput imena, prezimena, pozicije, broja dresa i nacionalnosti, što omogućava analizu i usporedbe između igrača unutar i izvan kluba.">
+    <meta name="author" content="Jure Rončević">
+    <meta name="version" content="1.0">
+    <meta name="language" content="Engleski">
+    <meta name="license" content="Creative Commons Zero (CC0)">
+    <title>Rukometni klubovi</title>
+</head>
+
+<body>
+    <h1>Rukometni klubovi</h1>
+
+    <!-- Link to View Data Table -->
+    <a href="datatable.html">View Data Table</a>
+
+    <!-- Section for Download Buttons -->
+    <div id="download-section">
+        <a href="/data/handball_clubs.csv" download>Download CSV</a><br>
+        <a href="/data/handball_clubs.json" download>Download JSON</a>
+    </div>
+
+    <!-- Metadata Description (README.md content) -->
+    <section id="metadata">
+        <h2>Skup podataka: Rukometni klubovi</h2>
+        <p>Ovaj skup podataka sadrži informacije o rukometnim klubovima, uključujući naziv kluba, kontakt podatke, godinu osnivanja te popis igrača. Svaki klub u skupu podataka ima jedinstveni identifikator, što omogućuje lako povezivanje s drugim informacijama. Osim osnovnih informacija o klubovima, podaci uključuju i detalje o trenerima, kao i o domaćim arenama gdje se održavaju utakmice.</p>
+        <p>Dodatno, skup podataka pruža uvid u ligu u kojoj klubovi igraju, broj osvojenih prvenstava, te web stranice na kojima se mogu pronaći dodatne informacije o klubovima. Također, svaki igrač unutar kluba je opisan s atributima poput imena, prezimena, pozicije, broja dresa i nacionalnosti, što omogućava analizu i usporedbe između igrača unutar i izvan kluba.</p>
+        
+        <h3>Metapodaci</h3>
+        <ul>
+            <li><strong>Opis otvorene licencije:</strong> Ovaj skup podataka je licenciran pod <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons Zero (CC0)</a>, što omogućava korištenje, dijeljenje i prilagođavanje podataka bez ikakvih ograničenja.</li>
+            <li><strong>Naziv autora:</strong> Jure Rončević</li>
+            <li><strong>Verzija skupa podataka:</strong> 1.0</li>
+            <li><strong>Jezik u kojemu se nalaze podaci:</strong> Engleski</li>
+        </ul>
+
+        <h3>Opis atributa</h3>
+        <ul>
+            <li><strong>ClubName:</strong> Ime rukometnog kluba.</li>
+            <li><strong>Country:</strong> Država u kojoj se klub nalazi.</li>
+            <li><strong>PhoneNumber:</strong> Kontakt broj kluba.</li>
+            <li><strong>Email:</strong> Email adresa kluba.</li>
+            <li><strong>YearEstablished:</strong> Godina osnivanja kluba.</li>
+            <li><strong>HomeArena:</strong> Dvorana kluba, odnosno mjesto gdje se održavaju domaći mečevi.</li>
+            <li><strong>League:</strong> Liga u kojoj klub sudjeluje.</li>
+            <li><strong>ChampionshipsWon:</strong> Broj osvojenih prvenstava.</li>
+            <li><strong>Website:</strong> Web stranica kluba.</li>
+            <li><strong>TeamColors:</strong> Boje dresova tima, uključujući svijetlu i tamnu boju.</li>
+            <li><strong>HeadCoach:</strong> Ime i prezime glavnog trenera kluba.</li>
+            <li><strong>Players:</strong> Lista igrača koji su članovi kluba, uključujući njihova imena, prezimena, pozicije, brojeve dresa i nacionalnosti.</li>
+        </ul>
+
+        <h3>Datum kreiranja skupa podataka</h3>
+        <p>27.10.2024.</p>
+
+        <h3>Izvori podataka</h3>
+        <ul>
+            <li><a href="https://www.eurohandball.com/" target="_blank">Stranica Europske rukometne federacije</a> te stranice klubova.</li>
+        </ul>
+
+        <h3>Dodatni podaci za kontekst</h3>
+        <p>Statistika o utakmicama: Povijest rezultata utakmica, uključujući pobjede, poraze i neriješene ishode.</p>
+        <p>Podaci o turnirima i prvenstvima: Sudjelovanje klubova u različitim turnirima i rezultati.</p>
+
+        <h3>Izvori dodatnih podataka</h3>
+        <ul>
+            <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets - Različiti skupovi podataka, uključujući sportske podatke.</a></li>
+            <li><a href="https://www.ihf.info/" target="_blank">IHF - International Handball Federation - Podaci o međunarodnim rukometnim timovima i natjecanjima.</a></li>
+            <li><a href="https://www.eurohandball.com/" target="_blank">EHF - European Handball Federation - Podaci o europskim rukometnim natjecanjima i timovima.</a></li>
+        </ul>
+
+        <h3>Napomene</h3>
+        <p>Podaci su dostupni za preuzimanje u CSV i JSON formatima.</p>
+    </section>
+</body>
+
+</html>

@@ -2,6 +2,8 @@
 const express = require('express');
 const pool = require('./db');
 const router = express.Router();
+const path = require('path');
+
 
 // Mapa atributa na stvarne nazive kolona u bazi podataka.
 // Ovo se koristi kako bi se omogućila dinamička pretraga na temelju atributa koji se šalje kroz upit.
@@ -55,10 +57,19 @@ router.get('/clubs', async (req, res) => {
             LEFT JOIN players p ON c.club_id = p.club_id
         `);
         // Vraća podatke u JSON formatu
-        res.json(result.rows);
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: "Fetched all clubs successfully",
+            response: result.rows
+        });
     } catch (error) {
-        // Ako se dogodi pogreška u bazi, vraća status 500 s porukom o grešci
-        res.status(500).json({ error: 'Error fetching clubs' });
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error fetching clubs",
+            response: null
+        });
     }
 });
 
@@ -142,6 +153,351 @@ router.get('/clubs/search', async (req, res) => {
         res.status(500).json({ error: 'Error fetching clubs with filter' });
     }
 });
+
+
+
+
+router.get('/clubs/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const result = await pool.query(`
+            SELECT 
+                c.club_name, c.country, c.phone_number, c.email, c.year_established,
+                c.home_arena, c.league, c.championships_won, c.website,
+                c.light_team_color, c.dark_team_color, c.head_coach_first, c.head_coach_last
+            FROM clubs c
+            WHERE c.club_id = $1
+        `, [id]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `Club with ID ${id} does not exist`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: "Fetched club successfully",
+            response: result.rows[0]
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error fetching club",
+            response: null
+        });
+    }
+});
+
+
+
+router.post('/clubs', async (req, res) => {
+    const {
+        club_name, country, phone_number, email, year_established,
+        home_arena, league, championships_won, website,
+        light_team_color, dark_team_color, head_coach_first, head_coach_last
+    } = req.body;
+
+    try {
+        const result = await pool.query(`
+            INSERT INTO clubs (
+                club_name, country, phone_number, email, year_established, home_arena, league, championships_won,
+                website, light_team_color, dark_team_color, head_coach_first, head_coach_last
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
+            RETURNING *
+        `, [club_name, country, phone_number, email, year_established, home_arena, league, championships_won,
+            website, light_team_color, dark_team_color, head_coach_first, head_coach_last]);
+
+            res.setHeader('Content-Type', 'application/json');
+            res.status(201).json({
+                status: "Created",
+                message: "Club created successfully",
+                response: result.rows[0]
+            });
+    } catch (error) {
+            res.setHeader('Content-Type', 'application/json');
+            res.status(500).json({
+                status: "Error",
+                message: "Error creating club",
+                response: null
+            });
+    }
+});
+
+
+
+router.put('/clubs/:id', async (req, res) => {
+    const { id } = req.params; // Get the club ID from the request parameters
+    const {
+        club_name, country, phone_number, email, year_established,
+        home_arena, league, championships_won, website,
+        light_team_color, dark_team_color, head_coach_first, head_coach_last
+    } = req.body; // Extract updated data from the request body
+
+    try {
+        const result = await pool.query(`
+            UPDATE clubs
+            SET 
+                club_name = $1,
+                country = $2,
+                phone_number = $3,
+                email = $4,
+                year_established = $5,
+                home_arena = $6,
+                league = $7,
+                championships_won = $8,
+                website = $9,
+                light_team_color = $10,
+                dark_team_color = $11,
+                head_coach_first = $12,
+                head_coach_last = $13
+            WHERE club_id = $14
+            RETURNING *
+        `, [
+            club_name, country, phone_number, email, year_established,
+            home_arena, league, championships_won, website,
+            light_team_color, dark_team_color, head_coach_first, head_coach_last, id
+        ]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `Club with ID ${id} does not exist`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: "Club updated successfully",
+            response: result.rows[0]
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error updating club",
+            response: null
+        });
+    }
+});
+
+
+
+
+router.delete('/clubs/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const result = await pool.query(`DELETE FROM clubs WHERE club_id = $1 RETURNING *`, [id]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `Club with ID ${id} does not exist`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: "Club deleted successfully",
+            response: result.rows[0]
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error deleting club",
+            response: null
+        });
+    }
+});
+
+
+router.get('/clubs/country/:country', async (req, res) => {
+    const { country } = req.params; // Dohvati parametar zemlje iz URL-a
+
+    try {
+        const result = await pool.query(`
+            SELECT 
+                c.club_name,
+                c.country,
+                c.phone_number,
+                c.email,
+                c.year_established,
+                c.home_arena,
+                c.league,
+                c.championships_won,
+                c.website,
+                c.light_team_color,
+                c.dark_team_color,
+                c.head_coach_first,
+                c.head_coach_last
+            FROM clubs c
+            WHERE c.country ILIKE $1
+        `, [country]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `No clubs found in country: ${country}`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: `Clubs retrieved successfully for country: ${country}`,
+            response: result.rows
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error retrieving clubs by country",
+            response: null
+        });
+    }
+});
+
+
+router.get('/clubs/league/:league', async (req, res) => {
+    const { league } = req.params; // Dohvati parametar lige iz URL-a
+
+    try {
+        const result = await pool.query(`
+            SELECT 
+                c.club_name,
+                c.country,
+                c.phone_number,
+                c.email,
+                c.year_established,
+                c.home_arena,
+                c.league,
+                c.championships_won,
+                c.website,
+                c.light_team_color,
+                c.dark_team_color,
+                c.head_coach_first,
+                c.head_coach_last
+            FROM clubs c
+            WHERE c.league ILIKE $1
+        `, [league]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `No clubs found in league: ${league}`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: `Clubs retrieved successfully for league: ${league}`,
+            response: result.rows
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error retrieving clubs by league",
+            response: null
+        });
+    }
+});
+
+
+
+router.get('/clubs/championships/:count', async (req, res) => {
+    const { count } = req.params;
+
+    try {
+        const result = await pool.query(`
+            SELECT 
+                c.club_name,
+                c.country,
+                c.phone_number,
+                c.email,
+                c.year_established,
+                c.home_arena,
+                c.league,
+                c.championships_won,
+                c.website,
+                c.light_team_color,
+                c.dark_team_color,
+                c.head_coach_first,
+                c.head_coach_last
+            FROM clubs c
+            WHERE c.championships_won > $1
+        `, [count]);
+
+        if (result.rows.length === 0) {
+            res.setHeader('Content-Type', 'application/json');
+            return res.status(404).json({
+                status: "Not Found",
+                message: `No clubs found with more than ${count} championships`,
+                response: null
+            });
+        }
+
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json({
+            status: "OK",
+            message: `Clubs retrieved successfully with more than ${count} championships`,
+            response: result.rows
+        });
+    } catch (error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.status(500).json({
+            status: "Error",
+            message: "Error retrieving clubs by championships",
+            response: null
+        });
+    }
+});
+
+
+router.get('/openapi', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.sendFile(path.join(__dirname, '../openapi.json'));
+});
+
+
+router.use((req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(501).json({
+        status: "Not Implemented",
+        message: `The requested endpoint ${req.originalUrl} is not implemented`,
+        response: null
+    });
+});
+
+router.all('*', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(501).json({
+        status: "Not Implemented",
+        message: `Method ${req.method} is not implemented for the requested resource ${req.originalUrl}`,
+        response: null
+    });
+});
+
+
+
+
 
 
 module.exports = router;

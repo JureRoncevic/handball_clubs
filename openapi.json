@@ -1,0 +1,384 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+      "title": "Handball Clubs API",
+      "description": "API za upravljanje rukometnim klubovima.",
+      "version": "1.0.0",
+      "contact": {
+          "email": "jureron@gmail.com"
+      },
+      "license": {
+          "name": "Apache 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+      }
+  },
+  "paths": {
+      "/clubs": {
+          "get": {
+              "summary": "Get all clubs",
+              "description": "Returns a list of all clubs.",
+              "produces": ["application/json"],
+              "responses": {
+                  "200": {
+                      "description": "List of clubs fetched successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "array",
+                                  "items": {
+                                      "$ref": "#/components/Club"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "500": {
+                      "description": "Server error"
+                  }
+              }
+          },
+          "post": {
+              "summary": "Create a new club",
+              "description": "Adds a new club to the database.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "body",
+                      "in": "body",
+                      "description": "Details of the new club",
+                      "required": true,
+                      "schema": {
+                          "$ref": "#/components/ClubInput"
+                      }
+                  }
+              ],
+              "responses": {
+                  "201": {
+                      "description": "Club created successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "$ref": "#/components/Club"
+                              }
+                          }
+                      }
+                  },
+                  "500": {
+                      "description": "Server error"
+                  }
+              }
+          }
+      },
+      "/clubs/{id}": {
+          "get": {
+              "summary": "Get club by ID",
+              "description": "Retrieves a single club by its ID.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "id",
+                      "in": "path",
+                      "description": "ID of the club",
+                      "required": true,
+                      "schema": {
+                          "type": "integer",
+                          "format": "int64"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Club fetched successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "$ref": "#/components/Club"
+                              }
+                          }
+                      }
+                  },
+                  "404": {
+                      "description": "Club not found"
+                  }
+              }
+          },
+          "put": {
+              "summary": "Update club by ID",
+              "description": "Updates the details of an existing club.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "id",
+                      "in": "path",
+                      "description": "ID of the club to update",
+                      "required": true,
+                      "schema": {
+                          "type": "integer",
+                          "format": "int64"
+                      }
+                  },
+                  {
+                      "name": "body",
+                      "in": "body",
+                      "description": "Updated details of the club",
+                      "required": true,
+                      "schema": {
+                          "$ref": "#/components/ClubInput"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Club updated successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "$ref": "#/components/Club"
+                              }
+                          }
+                      }
+                  },
+                  "404": {
+                      "description": "Club not found"
+                  }
+              }
+          },
+          "delete": {
+              "summary": "Delete club by ID",
+              "description": "Deletes a club by its ID.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "id",
+                      "in": "path",
+                      "description": "ID of the club to delete",
+                      "required": true,
+                      "schema": {
+                          "type": "integer",
+                          "format": "int64"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Club deleted successfully"
+                  },
+                  "404": {
+                      "description": "Club not found"
+                  }
+              }
+          }
+      },
+      "/clubs/search": {
+          "get": {
+              "summary": "Search clubs",
+              "description": "Searches clubs by specific attributes or terms.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "term",
+                      "in": "query",
+                      "description": "Search term",
+                      "required": false,
+                      "schema": {
+                          "type": "string"
+                      }
+                  },
+                  {
+                      "name": "attribute",
+                      "in": "query",
+                      "description": "Specific attribute to search for",
+                      "required": false,
+                      "schema": {
+                          "type": "string"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Search results fetched successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "array",
+                                  "items": {
+                                      "$ref": "#/components/Club"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "500": {
+                      "description": "Server error"
+                  }
+              }
+          }
+      },
+      "/clubs/country/{country}": {
+          "get": {
+              "summary": "Get clubs by country",
+              "description": "Fetches all clubs from a specific country.",
+              "produces": ["application/json"],
+              "parameters": [
+                  {
+                      "name": "country",
+                      "in": "path",
+                      "description": "Country of the clubs to fetch",
+                      "required": true,
+                      "schema": {
+                          "type": "string"
+                      }
+                  }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Clubs fetched successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "array",
+                                  "items": {
+                                      "$ref": "#/components/Club"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "404": {
+                      "description": "No clubs found in the specified country"
+                  }
+              }
+          }
+      },
+      "/clubs/league/{league}": {
+        "get": {
+            "summary": "Get clubs by league",
+            "description": "Fetches all clubs from a specific league.",
+            "produces": ["application/json"],
+            "parameters": [
+                {
+                    "name": "league",
+                    "in": "path",
+                    "description": "League of the clubs to fetch",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "Clubs fetched successfully",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/Club"
+                                }
+                            }
+                        }
+                    }
+                },
+                "404": {
+                    "description": "No clubs found in the specified league"
+                }
+            }
+        }
+    },
+    "/clubs/championships/{count}": {
+        "get": {
+            "summary": "Get clubs by championships count",
+            "description": "Fetches all clubs with more than the specified number of championships.",
+            "produces": ["application/json"],
+            "parameters": [
+                {
+                    "name": "count",
+                    "in": "path",
+                    "description": "Minimum number of championships",
+                    "required": true,
+                    "schema": {
+                        "type": "integer"
+                    }
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "Clubs fetched successfully",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/Club"
+                                }
+                            }
+                        }
+                    }
+                },
+                "404": {
+                    "description": "No clubs found with more than the specified number of championships"
+                }
+            }
+        }
+    },
+      "/openapi": {
+          "get": {
+              "summary": "Get OpenAPI specification",
+              "description": "Returns the OpenAPI specification for this API.",
+              "produces": ["application/json"],
+              "responses": {
+                  "200": {
+                      "description": "OpenAPI specification returned successfully",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object"
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  },
+  "components": {
+      "Club": {
+          "type": "object",
+          "properties": {
+              "id": { "type": "integer", "format": "int64" },
+              "club_name": { "type": "string" },
+              "country": { "type": "string" },
+              "phone_number": { "type": "string" },
+              "email": { "type": "string" },
+              "year_established": { "type": "integer" },
+              "home_arena": { "type": "string" },
+              "league": { "type": "string" },
+              "championships_won": { "type": "integer" },
+              "website": { "type": "string" },
+              "light_team_color": { "type": "string" },
+              "dark_team_color": { "type": "string" },
+              "head_coach_first": { "type": "string" },
+              "head_coach_last": { "type": "string" }
+          }
+      },
+      "ClubInput": {
+          "type": "object",
+          "properties": {
+              "club_name": { "type": "string" },
+              "country": { "type": "string" },
+              "phone_number": { "type": "string" },
+              "email": { "type": "string" },
+              "year_established": { "type": "integer" },
+              "home_arena": { "type": "string" },
+              "league": { "type": "string" },
+              "championships_won": { "type": "integer" },
+              "website": { "type": "string" },
+              "light_team_color": { "type": "string" },
+              "dark_team_color": { "type": "string" },
+              "head_coach_first": { "type": "string" },
+              "head_coach_last": { "type": "string" }
+          }
+      }
+  }
+}

@@ -28,11 +28,8 @@ const attributeToColumn = {
     "player_nationality": "p.nationality"
 };
 
-// Ruta za dohvaćanje svih klubova iz baze podataka
-// Ova ruta vraća sve podatke o klubovima, uključujući informacije o igračima (preko LEFT JOIN).
 router.get('/clubs', async (req, res) => {
     try {
-        // SQL upit za dohvaćanje svih klubova i njihovih igrača
         const result = await pool.query(`
             SELECT 
                 c.club_name,
@@ -56,12 +53,28 @@ router.get('/clubs', async (req, res) => {
             FROM clubs c
             LEFT JOIN players p ON c.club_id = p.club_id
         `);
-        // Vraća podatke u JSON formatu
+
+        const enrichedClubs = result.rows.map(club => ({
+            ...club,
+            "@context": "https://schema.org",
+            "@type": "SportsTeam",
+            name: club.club_name,
+            location: {
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: {
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website
+        }));
+
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json({
             status: "OK",
             message: "Fetched all clubs successfully",
-            response: result.rows
+            response: enrichedClubs
         });
     } catch (error) {
         res.setHeader('Content-Type', 'application/json');
@@ -73,13 +86,10 @@ router.get('/clubs', async (req, res) => {
     }
 });
 
-// Ruta za pretragu klubova prema određenim parametrima (term i attribute)
-// Ova ruta omogućava pretragu klubova na temelju specifičnog atributa ili pretrage po svim atributima.
+
 router.get('/clubs/search', async (req, res) => {
-    // Dohvat query parametara 'term' (pojam za pretragu) i 'attribute' (atribut prema kojem pretražujemo)
     const { term, attribute } = req.query;
 
-    // Početni SQL upit za pretragu klubova
     let query = `
         SELECT 
             c.club_name,
@@ -105,15 +115,12 @@ router.get('/clubs/search', async (req, res) => {
         WHERE 1=1
     `;
 
-    // Polje za parametre upita koji će se koristiti za filtriranje rezultata
     const params = [];
     if (term) {
         if (attribute && attributeToColumn[attribute]) {
-            // Ako je specifičan atribut odabran, pretraga se vrši samo u toj koloni
             query += ` AND ${attributeToColumn[attribute]} ILIKE $1`;
             params.push(`%${term}%`);
         } else {
-            // Ako nije odabran specifičan atribut, pretraga se vrši po svim kolonama
             const wildcardTerm = `%${term}%`;
             query += `
                 AND (
@@ -137,7 +144,6 @@ router.get('/clubs/search', async (req, res) => {
                     p.nationality ILIKE $18
                 )
             `;
-            // Dodavanje parametara za svaki od 18 mogućih filtera
             for (let i = 0; i < 18; i++) {
                 params.push(wildcardTerm);
             }
@@ -145,14 +151,28 @@ router.get('/clubs/search', async (req, res) => {
     }
 
     try {
-        // Izvršavanje SQL upita s parametrima i slanje rezultata u JSON formatu
         const result = await pool.query(query, params);
-        res.json(result.rows);
+        const enrichedClubs = result.rows.map(club => ({
+            ...club,
+            "@context": "https://schema.org",
+            "@type": "SportsTeam",
+            name: club.club_name,
+            location: {
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: {
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website
+        }));
+        res.json(enrichedClubs);
     } catch (error) {
-        // Ako dođe do pogreške u upitu, vraća status 500 i poruku o grešci
         res.status(500).json({ error: 'Error fetching clubs with filter' });
     }
 });
+
 
 
 
@@ -178,11 +198,30 @@ router.get('/clubs/:id', async (req, res) => {
             });
         }
 
+        const club = result.rows[0];
+
+        
+        const enrichedResponse = {
+            ...club, 
+            "@context": "https://schema.org", 
+            "@type": "SportsTeam", 
+            name: club.club_name, 
+            location: { 
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: { 
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website 
+        };
+
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json({
             status: "OK",
             message: "Fetched club successfully",
-            response: result.rows[0]
+            response: enrichedResponse
         });
     } catch (error) {
         res.setHeader('Content-Type', 'application/json');
@@ -193,6 +232,7 @@ router.get('/clubs/:id', async (req, res) => {
         });
     }
 });
+
 
 
 
@@ -324,7 +364,7 @@ router.delete('/clubs/:id', async (req, res) => {
 
 
 router.get('/clubs/country/:country', async (req, res) => {
-    const { country } = req.params; // Dohvati parametar zemlje iz URL-a
+    const { country } = req.params;
 
     try {
         const result = await pool.query(`
@@ -355,11 +395,27 @@ router.get('/clubs/country/:country', async (req, res) => {
             });
         }
 
+        const enrichedClubs = result.rows.map(club => ({
+            ...club,
+            "@context": "https://schema.org",
+            "@type": "SportsTeam",
+            name: club.club_name,
+            location: {
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: {
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website
+        }));
+
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json({
             status: "OK",
             message: `Clubs retrieved successfully for country: ${country}`,
-            response: result.rows
+            response: enrichedClubs
         });
     } catch (error) {
         res.setHeader('Content-Type', 'application/json');
@@ -372,8 +428,9 @@ router.get('/clubs/country/:country', async (req, res) => {
 });
 
 
+
 router.get('/clubs/league/:league', async (req, res) => {
-    const { league } = req.params; // Dohvati parametar lige iz URL-a
+    const { league } = req.params;
 
     try {
         const result = await pool.query(`
@@ -404,11 +461,27 @@ router.get('/clubs/league/:league', async (req, res) => {
             });
         }
 
+        const enrichedClubs = result.rows.map(club => ({
+            ...club,
+            "@context": "https://schema.org",
+            "@type": "SportsTeam",
+            name: club.club_name,
+            location: {
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: {
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website
+        }));
+
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json({
             status: "OK",
             message: `Clubs retrieved successfully for league: ${league}`,
-            response: result.rows
+            response: enrichedClubs
         });
     } catch (error) {
         res.setHeader('Content-Type', 'application/json');
@@ -454,11 +527,27 @@ router.get('/clubs/championships/:count', async (req, res) => {
             });
         }
 
+        const enrichedClubs = result.rows.map(club => ({
+            ...club,
+            "@context": "https://schema.org",
+            "@type": "SportsTeam",
+            name: club.club_name,
+            location: {
+                "@type": "SportsActivityLocation",
+                "name": club.home_arena
+            },
+            coach: {
+                "@type": "Person",
+                "name": `${club.head_coach_first} ${club.head_coach_last}`
+            },
+            url: club.website
+        }));
+
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json({
             status: "OK",
             message: `Clubs retrieved successfully with more than ${count} championships`,
-            response: result.rows
+            response: enrichedClubs
         });
     } catch (error) {
         res.setHeader('Content-Type', 'application/json');
@@ -469,6 +558,17 @@ router.get('/clubs/championships/:count', async (req, res) => {
         });
     }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 router.get('/openapi', (req, res) => {

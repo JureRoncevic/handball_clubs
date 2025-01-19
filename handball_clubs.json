@@ -1,702 +1,2242 @@
 [
-    {
-        "ClubName": "Aalborg Håndbold",
-        "Country": "Denmark",
-        "PhoneNumber": "+45 96 352030",
-        "Email": "jl@aalborghaandbold.dk",
-        "YearEstablished": 2000,
-        "HomeArena": "Sparekassen Danmark Arena",
-        "League": "Herreligaen",
-        "ChampionshipsWon": 14,
-        "Website": "www.aalborghaandbold.dk",
-        "TeamColors": {
-            "Light": "Light blue",
-            "Dark": "Red"
-        },
-        "HeadCoach": {
-            "FirstName": "Maik",
-            "LastName": "Machulla"
-        },
-        "Players": [
-            {
-                "FirstName": "Niklas",
-                "LastName": "Landin Jacobsen",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 1,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "Sebastian",
-                "LastName": "Barthold",
-                "Position": "Left Wing",
-                "JerseyNumber": 19,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Kristian",
-                "LastName": "Bjørnsen",
-                "Position": "Right Wing",
-                "JerseyNumber": 6,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Bjarki",
-                "LastName": "Jóhannsson",
-                "Position": "Left Back",
-                "JerseyNumber": 23,
-                "Nationality": "Iceland"
-            },
-            {
-                "FirstName": "Mads",
-                "LastName": "Hoxer Hangaard",
-                "Position": "Right Back",
-                "JerseyNumber": 14,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "Thomas",
-                "LastName": "Arnoldsen",
-                "Position": "Centre Back",
-                "JerseyNumber": 7,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "René",
-                "LastName": "Antonsen",
-                "Position": "Line Player",
-                "JerseyNumber": 22,
-                "Nationality": "Denmark"
-            }
-        ]
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Niklas",
+    "player_last_name": "Landin Jacobsen",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 1,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
     },
-    {
-        "ClubName": "Barça",
-        "Country": "Spain",
-        "PhoneNumber": "+34 93 4967247",
-        "Email": "xavier.ocallaghan@fcbarcelona.cat",
-        "YearEstablished": 1942,
-        "HomeArena": "Palau Blaugrana",
-        "League": "Liga Asobal",
-        "ChampionshipsWon": 185,
-        "Website": "www.fcbarcelona.cat",
-        "TeamColors": {
-            "Light": "Lime yellow",
-            "Dark": "Blue red stripped"
-        },
-        "HeadCoach": {
-            "FirstName": "Antonio Carlos",
-            "LastName": "Ortega Pérez"
-        },
-        "Players": [
-            {
-                "FirstName": "Emil",
-                "LastName": "Nielsen",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 40,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "Aitor",
-                "LastName": "Ariño Bengoechea",
-                "Position": "Left Wing",
-                "JerseyNumber": 13,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Blaz",
-                "LastName": "Janc",
-                "Position": "Right Wing",
-                "JerseyNumber": 35,
-                "Nationality": "Slovenia"
-            },
-            {
-                "FirstName": "Juan",
-                "LastName": "Palomino Morón",
-                "Position": "Left Back",
-                "JerseyNumber": 44,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Dika",
-                "LastName": "Mem",
-                "Position": "Right Back",
-                "JerseyNumber": 82,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Domen",
-                "LastName": "Makuc",
-                "Position": "Centre Back",
-                "JerseyNumber": 10,
-                "Nationality": "Slovenia"
-            },
-            {
-                "FirstName": "Luis Diogo",
-                "LastName": "Da Sousa Frade",
-                "Position": "Line Player",
-                "JerseyNumber": 20,
-                "Nationality": "Portugal"
-            }
-        ]
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
     },
-    {
-        "ClubName": "HC Zagreb",
-        "Country": "Croatia",
-        "PhoneNumber": "+385 95 9999303",
-        "Email": "info@rk-zagreb.hr",
-        "YearEstablished": 1922,
-        "HomeArena": "Arena Zagreb",
-        "League": "Premijer liga",
-        "ChampionshipsWon": 76,
-        "Website": "www.rk-zagreb.hr",
-        "TeamColors": {
-            "Light": "White",
-            "Dark": "Blue"
-        },
-        "HeadCoach": {
-            "FirstName": "Andrija",
-            "LastName": "Nikolić"
-        },
-        "Players": [
-            {
-                "FirstName": "Ante",
-                "LastName": "Grbavac",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 47,
-                "Nationality": "Bosnia and Herzegovina"
-            },
-            {
-                "FirstName": "Davor",
-                "LastName": "Ćavar",
-                "Position": "Left Wing",
-                "JerseyNumber": 24,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Filip",
-                "LastName": "Glavaš",
-                "Position": "Right Wing",
-                "JerseyNumber": 10,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Niko",
-                "LastName": "Franković",
-                "Position": "Left Back",
-                "JerseyNumber": 71,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Luka Lovre",
-                "LastName": "Klarica",
-                "Position": "Right Back",
-                "JerseyNumber": 5,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Ihar",
-                "LastName": "Bialiauski",
-                "Position": "Centre Back",
-                "JerseyNumber": 44,
-                "Nationality": "Belarus"
-            },
-            {
-                "FirstName": "Adin",
-                "LastName": "Faljić",
-                "Position": "Line Player",
-                "JerseyNumber": 34,
-                "Nationality": "Bosnia and Herzegovina"
-            }
-        ]
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Sebastian",
+    "player_last_name": "Barthold",
+    "player_position": "Left Wing",
+    "player_jersey_number": 19,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
     },
-    {
-        "ClubName": "Kolstad Håndbold",
-        "Country": "Norway",
-        "PhoneNumber": "+47 90151568",
-        "Email": "jostein.sivertsen@kolstad-handball.no",
-        "YearEstablished": 1972,
-        "HomeArena": "Trondheim Spektrum",
-        "League": "REMA 1000-ligaen",
-        "ChampionshipsWon": 2,
-        "Website": "www.kolstad-handball.no",
-        "TeamColors": {
-            "Light": "White",
-            "Dark": "Red"
-        },
-        "HeadCoach": {
-            "FirstName": "Christian",
-            "LastName": "Berge"
-        },
-        "Players": [
-            {
-                "FirstName": "Torbjørn Sittrup",
-                "LastName": "Bergerud",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 6,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Adrian",
-                "LastName": "Aalberg",
-                "Position": "Left Wing",
-                "JerseyNumber": 7,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Sigvaldi Björn",
-                "LastName": "Gudjonsson",
-                "Position": "Right Wing",
-                "JerseyNumber": 48,
-                "Nationality": "Iceland"
-            },
-            {
-                "FirstName": "Simon",
-                "LastName": "Jeppsson",
-                "Position": "Left Back",
-                "JerseyNumber": 42,
-                "Nationality": "Sweden"
-            },
-            {
-                "FirstName": "Aksel",
-                "LastName": "Hald",
-                "Position": "Right Back",
-                "JerseyNumber": 2,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Sander",
-                "LastName": "Sagosen",
-                "Position": "Centre Back",
-                "JerseyNumber": 23,
-                "Nationality": "Norway"
-            },
-            {
-                "FirstName": "Magnus",
-                "LastName": "Gullerud",
-                "Position": "Line Player",
-                "JerseyNumber": 14,
-                "Nationality": "Norway"
-            }
-        ]
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
     },
-    {
-        "ClubName": "Dinamo Bucuresti",
-        "Country": "Romania",
-        "PhoneNumber": "+40 21 2101288",
-        "Email": "office@csdinamo.ro",
-        "YearEstablished": 1953,
-        "HomeArena": "Sala Polivalentă Dinamo",
-        "League": "Liga Națională",
-        "ChampionshipsWon": 36,
-        "Website": "www.csdinamo.eu",
-        "TeamColors": {
-            "Light": "White",
-            "Dark": "Red"
-        },
-        "HeadCoach": {
-            "FirstName": "David",
-            "LastName": "Davis Camara"
-        },
-        "Players": [
-            {
-                "FirstName": "Vladimir",
-                "LastName": "Cupara",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 1,
-                "Nationality": "Serbia"
-            },
-            {
-                "FirstName": "Nicusor Andrei",
-                "LastName": "Negru",
-                "Position": "Left Wing",
-                "JerseyNumber": 24,
-                "Nationality": "Romania"
-            },
-            {
-                "FirstName": "Andrii",
-                "LastName": "Akimenko",
-                "Position": "Right Wing",
-                "JerseyNumber": 55,
-                "Nationality": "Ukraine"
-            },
-            {
-                "FirstName": "André",
-                "LastName": "Gomes",
-                "Position": "Left Back",
-                "JerseyNumber": 27,
-                "Nationality": "Portugal"
-            },
-            {
-                "FirstName": "Stanislav",
-                "LastName": "Kasparek",
-                "Position": "Right Back",
-                "JerseyNumber": 37,
-                "Nationality": "Czech Republic"
-            },
-            {
-                "FirstName": "Haukur",
-                "LastName": "Thrastarson",
-                "Position": "Centre Back",
-                "JerseyNumber": 25,
-                "Nationality": "Iceland"
-            },
-            {
-                "FirstName": "Miklós",
-                "LastName": "Rosta",
-                "Position": "Line Player",
-                "JerseyNumber": 45,
-                "Nationality": "Hungary"
-            }
-        ]
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Kristian",
+    "player_last_name": "Bjørnsen",
+    "player_position": "Right Wing",
+    "player_jersey_number": 6,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
     },
-    {
-        "ClubName": "Füchse Berlin",
-        "Country": "Germany",
-        "PhoneNumber": "+49 175 5870475",
-        "Email": "zerbe@fuechse.berlin",
-        "YearEstablished": 1891,
-        "HomeArena": "Max-Schmeling-Halle",
-        "League": "Handball-Bundesliga",
-        "ChampionshipsWon": 7,
-        "Website": "www.fuechse.berlin",
-        "TeamColors": {
-            "Light": "Pink",
-            "Dark": "Black"
-        },
-        "HeadCoach": {
-            "FirstName": "Jaron",
-            "LastName": "Siewert"
-        },
-        "Players": [
-            {
-                "FirstName": "Lasse",
-                "LastName": "Ludwig",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 1,
-                "Nationality": "Germany"
-            },
-            {
-                "FirstName": "Tim",
-                "LastName": "Freihöfer",
-                "Position": "Left Wing",
-                "JerseyNumber": 20,
-                "Nationality": "Germany"
-            },
-            {
-                "FirstName": "Hákun",
-                "LastName": "Av Teigum",
-                "Position": "Right Wing",
-                "JerseyNumber": 34,
-                "Nationality": "Faroe Islands"
-            },
-            {
-                "FirstName": "Paul",
-                "LastName": "Drux",
-                "Position": "Left Back",
-                "JerseyNumber": 95,
-                "Nationality": "Germany"
-            },
-            {
-                "FirstName": "Max",
-                "LastName": "Beneke",
-                "Position": "Right Back",
-                "JerseyNumber": 27,
-                "Nationality": "Germany"
-            },
-            {
-                "FirstName": "Nils",
-                "LastName": "Lichtlein",
-                "Position": "Centre Back",
-                "JerseyNumber": 17,
-                "Nationality": "Germany"
-            },
-            {
-                "FirstName": "Mijajlo",
-                "LastName": "Marsenić",
-                "Position": "Line Player",
-                "JerseyNumber": 93,
-                "Nationality": "Serbia"
-            }
-        ]
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
     },
-    {
-        "ClubName": "Industria Kielce",
-        "Country": "Poland",
-        "PhoneNumber": "+48 785 373785",
-        "Email": "p.papaj@kielcehandball.pl",
-        "YearEstablished": 1965,
-        "HomeArena": "Hala Legionow Kielce",
-        "League": "Orlen Superliga",
-        "ChampionshipsWon": 38,
-        "Website": "www.kielcehandball.pl",
-        "TeamColors": {
-            "Light": "Yellow",
-            "Dark": "Black"
-        },
-        "HeadCoach": {
-            "FirstName": "Talant",
-            "LastName": "Dujshebaev"
-        },
-        "Players": [
-            {
-                "FirstName": "Bekir",
-                "LastName": "Čordalija",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 16,
-                "Nationality": "Bosnia and Herzegovina"
-            },
-            {
-                "FirstName": "Dylan",
-                "LastName": "Nahi",
-                "Position": "Left Wing",
-                "JerseyNumber": 99,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Benoit",
-                "LastName": "Kounkoud",
-                "Position": "Right Wing",
-                "JerseyNumber": 7,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Tomasz",
-                "LastName": "Gebala",
-                "Position": "Left Back",
-                "JerseyNumber": 48,
-                "Nationality": "Poland"
-            },
-            {
-                "FirstName": "Jorge",
-                "LastName": "Maqueda Peno",
-                "Position": "Right Back",
-                "JerseyNumber": 15,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Igor",
-                "LastName": "Karačić",
-                "Position": "Centre Back",
-                "JerseyNumber": 18,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Artsem",
-                "LastName": "Karalek",
-                "Position": "Line Player",
-                "JerseyNumber": 50,
-                "Nationality": "Belarus"
-            }
-        ]
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Bjarki",
+    "player_last_name": "Jóhannsson",
+    "player_position": "Left Back",
+    "player_jersey_number": 23,
+    "player_nationality": "Iceland",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
     },
-    {
-        "ClubName": "Veszprém HC",
-        "Country": "Hungary",
-        "PhoneNumber": "+36 30 5024547",
-        "Email": "office@handballveszprem.hu",
-        "YearEstablished": 1977,
-        "HomeArena": "Veszprem Arena",
-        "League": "Nemzeti Bajnokság I",
-        "ChampionshipsWon": 67,
-        "Website": "www.handballveszprem.hu",
-        "TeamColors": {
-            "Light": "White",
-            "Dark": "Red"
-        },
-        "HeadCoach": {
-            "FirstName": "Xavier",
-            "LastName": "Pascual Fuertes"
-        },
-        "Players": [
-            {
-                "FirstName": "Rodrigo",
-                "LastName": "Corrales Rodal",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 12,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Hugo",
-                "LastName": "Descat",
-                "Position": "Left Wing",
-                "JerseyNumber": 9,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Gasper",
-                "LastName": "Marguč",
-                "Position": "Right Wing",
-                "JerseyNumber": 24,
-                "Nationality": "Slovenia"
-            },
-            {
-                "FirstName": "Patrik",
-                "LastName": "Ligetvári",
-                "Position": "Left Back",
-                "JerseyNumber": 23,
-                "Nationality": "Hungary"
-            },
-            {
-                "FirstName": "Nedim",
-                "LastName": "Remili",
-                "Position": "Right Back",
-                "JerseyNumber": 29,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Luka",
-                "LastName": "Cindrić",
-                "Position": "Centre Back",
-                "JerseyNumber": 25,
-                "Nationality": "Croatia"
-            },
-            {
-                "FirstName": "Ludovic",
-                "LastName": "Fabregas",
-                "Position": "Line Player",
-                "JerseyNumber": 89,
-                "Nationality": "France"
-            }
-        ]
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
     },
-    {
-        "ClubName": "HBC Nantes",
-        "Country": "France",
-        "PhoneNumber": "+33 6 64612242",
-        "Email": "jerome.champenois@hbcnantes.com",
-        "YearEstablished": 1953,
-        "HomeArena": "Palais des Sports de Beaulieu",
-        "League": "LNH Division 1",
-        "ChampionshipsWon": 7,
-        "Website": "www.hbcnantes.com",
-        "TeamColors": {
-            "Light": "White and purple",
-            "Dark": "Black and purple"
-        },
-        "HeadCoach": {
-            "FirstName": "Gregory",
-            "LastName": "Cojean"
-        },
-        "Players": [
-            {
-                "FirstName": "Ignacio",
-                "LastName": "Biosca García",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 30,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Pierre-Alexis",
-                "LastName": "Favril",
-                "Position": "Left Wing",
-                "JerseyNumber": 26,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Théo",
-                "LastName": "Avelange Demouge",
-                "Position": "Right Wing",
-                "JerseyNumber": 9,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Thibaud",
-                "LastName": "Briet",
-                "Position": "Left Back",
-                "JerseyNumber": 3,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Ayoub",
-                "LastName": "Abdi",
-                "Position": "Right Back",
-                "JerseyNumber": 8,
-                "Nationality": "Algeria"
-            },
-            {
-                "FirstName": "Lucas",
-                "LastName": "De la Breteche",
-                "Position": "Centre Back",
-                "JerseyNumber": 14,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Matej",
-                "LastName": "Gaber",
-                "Position": "Line Player",
-                "JerseyNumber": 15,
-                "Nationality": "Slovenia"
-            }
-        ]
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Mads",
+    "player_last_name": "Hoxer Hangaard",
+    "player_position": "Right Back",
+    "player_jersey_number": 14,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
     },
-    {
-        "ClubName": "Paris Saint-Germain Handball",
-        "Country": "France",
-        "PhoneNumber": "+33 (0)1 74 314000",
-        "Email": "tomeyer@psg.fr",
-        "YearEstablished": 1941,
-        "HomeArena": "Stade Pierre de Coubertin",
-        "League": "LNH Division 1",
-        "ChampionshipsWon": 24,
-        "Website": "www.psg.fr",
-        "TeamColors": {
-            "Light": "White",
-            "Dark": "Blue"
-        },
-        "HeadCoach": {
-            "FirstName": "Raul",
-            "LastName": "Gonzalez Gutierrez"
-        },
-        "Players": [
-            {
-                "FirstName": "Jannick",
-                "LastName": "Green",
-                "Position": "Goalkeeper",
-                "JerseyNumber": 16,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "Mathieu",
-                "LastName": "Grebille",
-                "Position": "Left Wing",
-                "JerseyNumber": 20,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "David",
-                "LastName": "Balaguer Romeu",
-                "Position": "Right Wing",
-                "JerseyNumber": 19,
-                "Nationality": "Spain"
-            },
-            {
-                "FirstName": "Jacob",
-                "LastName": "Holm Tandrup",
-                "Position": "Left Back",
-                "JerseyNumber": 32,
-                "Nationality": "Denmark"
-            },
-            {
-                "FirstName": "Victor",
-                "LastName": "Crenn",
-                "Position": "Right Back",
-                "JerseyNumber": 33,
-                "Nationality": "France"
-            },
-            {
-                "FirstName": "Dani",
-                "LastName": "Baijens",
-                "Position": "Centre Back",
-                "JerseyNumber": 77,
-                "Nationality": "Netherlands"
-            },
-            {
-                "FirstName": "Luka",
-                "LastName": "Karabatić",
-                "Position": "Line Player",
-                "JerseyNumber": 22,
-                "Nationality": "France"
-            }
-        ]
-    }
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
+    },
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "Thomas",
+    "player_last_name": "Arnoldsen",
+    "player_position": "Centre Back",
+    "player_jersey_number": 7,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
+    },
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Aalborg Håndbold",
+    "country": "Denmark",
+    "phone_number": "+45 96 352030",
+    "email": "jl@aalborghaandbold.dk",
+    "year_established": 2000,
+    "home_arena": "Sparekassen Danmark Arena",
+    "league": "Herreligaen",
+    "championships_won": 14,
+    "website": "www.aalborghaandbold.dk",
+    "light_team_color": "Light blue",
+    "dark_team_color": "Red",
+    "head_coach_first": "Maik",
+    "head_coach_last": "Machulla",
+    "player_first_name": "René",
+    "player_last_name": "Antonsen",
+    "player_position": "Line Player",
+    "player_jersey_number": 22,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Aalborg Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sparekassen Danmark Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Maik Machulla"
+    },
+    "url": "www.aalborghaandbold.dk"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Emil",
+    "player_last_name": "Nielsen",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 40,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Aitor",
+    "player_last_name": "Ariño Bengoechea",
+    "player_position": "Left Wing",
+    "player_jersey_number": 13,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Blaz",
+    "player_last_name": "Janc",
+    "player_position": "Right Wing",
+    "player_jersey_number": 35,
+    "player_nationality": "Slovenia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Juan",
+    "player_last_name": "Palomino Morón",
+    "player_position": "Left Back",
+    "player_jersey_number": 44,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Dika",
+    "player_last_name": "Mem",
+    "player_position": "Right Back",
+    "player_jersey_number": 82,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Domen",
+    "player_last_name": "Makuc",
+    "player_position": "Centre Back",
+    "player_jersey_number": 10,
+    "player_nationality": "Slovenia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "Barça",
+    "country": "Spain",
+    "phone_number": "+34 93 4967247",
+    "email": "xavier.ocallaghan@fcbarcelona.cat",
+    "year_established": 1942,
+    "home_arena": "Palau Blaugrana",
+    "league": "Liga Asobal",
+    "championships_won": 185,
+    "website": "www.fcbarcelona.cat",
+    "light_team_color": "Lime yellow",
+    "dark_team_color": "Blue red stripped",
+    "head_coach_first": "Antonio Carlos",
+    "head_coach_last": "Ortega Pérez",
+    "player_first_name": "Luis Diogo",
+    "player_last_name": "Da Sousa Frade",
+    "player_position": "Line Player",
+    "player_jersey_number": 20,
+    "player_nationality": "Portugal",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Barça",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palau Blaugrana"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Antonio Carlos Ortega Pérez"
+    },
+    "url": "www.fcbarcelona.cat"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Ante",
+    "player_last_name": "Grbavac",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 47,
+    "player_nationality": "Bosnia and Herzegovina",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Davor",
+    "player_last_name": "Ćavar",
+    "player_position": "Left Wing",
+    "player_jersey_number": 24,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Filip",
+    "player_last_name": "Glavaš",
+    "player_position": "Right Wing",
+    "player_jersey_number": 10,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Niko",
+    "player_last_name": "Franković",
+    "player_position": "Left Back",
+    "player_jersey_number": 71,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Luka Lovre",
+    "player_last_name": "Klarica",
+    "player_position": "Right Back",
+    "player_jersey_number": 5,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Ihar",
+    "player_last_name": "Bialiauski",
+    "player_position": "Centre Back",
+    "player_jersey_number": 44,
+    "player_nationality": "Belarus",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "HC Zagreb",
+    "country": "Croatia",
+    "phone_number": "+385 95 9999303",
+    "email": "info@rk-zagreb.hr",
+    "year_established": 1922,
+    "home_arena": "Arena Zagreb",
+    "league": "Premijer liga",
+    "championships_won": 76,
+    "website": "www.rk-zagreb.hr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Andrija",
+    "head_coach_last": "Nikolić",
+    "player_first_name": "Adin",
+    "player_last_name": "Faljić",
+    "player_position": "Line Player",
+    "player_jersey_number": 34,
+    "player_nationality": "Bosnia and Herzegovina",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HC Zagreb",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Arena Zagreb"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Andrija Nikolić"
+    },
+    "url": "www.rk-zagreb.hr"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Torbjørn Sittrup",
+    "player_last_name": "Bergerud",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 6,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Adrian",
+    "player_last_name": "Aalberg",
+    "player_position": "Left Wing",
+    "player_jersey_number": 7,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Sigvaldi Björn",
+    "player_last_name": "Gudjonsson",
+    "player_position": "Right Wing",
+    "player_jersey_number": 48,
+    "player_nationality": "Iceland",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Simon",
+    "player_last_name": "Jeppsson",
+    "player_position": "Left Back",
+    "player_jersey_number": 42,
+    "player_nationality": "Sweden",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Aksel",
+    "player_last_name": "Hald",
+    "player_position": "Right Back",
+    "player_jersey_number": 2,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Sander",
+    "player_last_name": "Sagosen",
+    "player_position": "Centre Back",
+    "player_jersey_number": 23,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Kolstad Håndbold",
+    "country": "Norway",
+    "phone_number": "+47 90151568",
+    "email": "jostein.sivertsen@kolstad-handball.no",
+    "year_established": 1972,
+    "home_arena": "Trondheim Spektrum",
+    "league": "REMA 1000-ligaen",
+    "championships_won": 2,
+    "website": "www.kolstad-handball.no",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Christian",
+    "head_coach_last": "Berge",
+    "player_first_name": "Magnus",
+    "player_last_name": "Gullerud",
+    "player_position": "Line Player",
+    "player_jersey_number": 14,
+    "player_nationality": "Norway",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Kolstad Håndbold",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Trondheim Spektrum"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Christian Berge"
+    },
+    "url": "www.kolstad-handball.no"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Vladimir",
+    "player_last_name": "Cupara",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 1,
+    "player_nationality": "Serbia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Nicusor Andrei",
+    "player_last_name": "Negru",
+    "player_position": "Left Wing",
+    "player_jersey_number": 24,
+    "player_nationality": "Romania",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Andrii",
+    "player_last_name": "Akimenko",
+    "player_position": "Right Wing",
+    "player_jersey_number": 55,
+    "player_nationality": "Ukraine",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "André",
+    "player_last_name": "Gomes",
+    "player_position": "Left Back",
+    "player_jersey_number": 27,
+    "player_nationality": "Portugal",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Stanislav",
+    "player_last_name": "Kasparek",
+    "player_position": "Right Back",
+    "player_jersey_number": 37,
+    "player_nationality": "Czech Republic",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Haukur",
+    "player_last_name": "Thrastarson",
+    "player_position": "Centre Back",
+    "player_jersey_number": 25,
+    "player_nationality": "Iceland",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Dinamo Bucuresti",
+    "country": "Romania",
+    "phone_number": "+40 21 2101288",
+    "email": "office@csdinamo.ro",
+    "year_established": 1953,
+    "home_arena": "Sala Polivalentă Dinamo",
+    "league": "Liga Națională",
+    "championships_won": 36,
+    "website": "www.csdinamo.eu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "David",
+    "head_coach_last": "Davis Camara",
+    "player_first_name": "Miklós",
+    "player_last_name": "Rosta",
+    "player_position": "Line Player",
+    "player_jersey_number": 45,
+    "player_nationality": "Hungary",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dinamo Bucuresti",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sala Polivalentă Dinamo"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "David Davis Camara"
+    },
+    "url": "www.csdinamo.eu"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Lasse",
+    "player_last_name": "Ludwig",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 1,
+    "player_nationality": "Germany",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Tim",
+    "player_last_name": "Freihöfer",
+    "player_position": "Left Wing",
+    "player_jersey_number": 20,
+    "player_nationality": "Germany",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Hákun",
+    "player_last_name": "Av Teigum",
+    "player_position": "Right Wing",
+    "player_jersey_number": 34,
+    "player_nationality": "Faroe Islands",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Paul",
+    "player_last_name": "Drux",
+    "player_position": "Left Back",
+    "player_jersey_number": 95,
+    "player_nationality": "Germany",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Max",
+    "player_last_name": "Beneke",
+    "player_position": "Right Back",
+    "player_jersey_number": 27,
+    "player_nationality": "Germany",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Nils",
+    "player_last_name": "Lichtlein",
+    "player_position": "Centre Back",
+    "player_jersey_number": 17,
+    "player_nationality": "Germany",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Füchse Berlin",
+    "country": "Germany",
+    "phone_number": "+49 175 5870475",
+    "email": "zerbe@fuechse.berlin",
+    "year_established": 1891,
+    "home_arena": "Max-Schmeling-Halle",
+    "league": "Handball-Bundesliga",
+    "championships_won": 7,
+    "website": "www.fuechse.berlin",
+    "light_team_color": "Pink",
+    "dark_team_color": "Black",
+    "head_coach_first": "Jaron",
+    "head_coach_last": "Siewert",
+    "player_first_name": "Mijajlo",
+    "player_last_name": "Marsenić",
+    "player_position": "Line Player",
+    "player_jersey_number": 93,
+    "player_nationality": "Serbia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Füchse Berlin",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Max-Schmeling-Halle"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Jaron Siewert"
+    },
+    "url": "www.fuechse.berlin"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Bekir",
+    "player_last_name": "Čordalija",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 16,
+    "player_nationality": "Bosnia and Herzegovina",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Dylan",
+    "player_last_name": "Nahi",
+    "player_position": "Left Wing",
+    "player_jersey_number": 99,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Benoit",
+    "player_last_name": "Kounkoud",
+    "player_position": "Right Wing",
+    "player_jersey_number": 7,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Tomasz",
+    "player_last_name": "Gebala",
+    "player_position": "Left Back",
+    "player_jersey_number": 48,
+    "player_nationality": "Poland",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Jorge",
+    "player_last_name": "Maqueda Peno",
+    "player_position": "Right Back",
+    "player_jersey_number": 15,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Igor",
+    "player_last_name": "Karačić",
+    "player_position": "Centre Back",
+    "player_jersey_number": 18,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Industria Kielce",
+    "country": "Poland",
+    "phone_number": "+48 785 373785",
+    "email": "p.papaj@kielcehandball.pl",
+    "year_established": 1965,
+    "home_arena": "Hala Legionow Kielce",
+    "league": "Orlen Superliga",
+    "championships_won": 38,
+    "website": "www.kielcehandball.pl",
+    "light_team_color": "Yellow",
+    "dark_team_color": "Black",
+    "head_coach_first": "Talant",
+    "head_coach_last": "Dujshebaev",
+    "player_first_name": "Artsem",
+    "player_last_name": "Karalek",
+    "player_position": "Line Player",
+    "player_jersey_number": 50,
+    "player_nationality": "Belarus",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Industria Kielce",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Hala Legionow Kielce"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Talant Dujshebaev"
+    },
+    "url": "www.kielcehandball.pl"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Rodrigo",
+    "player_last_name": "Corrales Rodal",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 12,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Hugo",
+    "player_last_name": "Descat",
+    "player_position": "Left Wing",
+    "player_jersey_number": 9,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Gasper",
+    "player_last_name": "Marguč",
+    "player_position": "Right Wing",
+    "player_jersey_number": 24,
+    "player_nationality": "Slovenia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Patrik",
+    "player_last_name": "Ligetvári",
+    "player_position": "Left Back",
+    "player_jersey_number": 23,
+    "player_nationality": "Hungary",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Nedim",
+    "player_last_name": "Remili",
+    "player_position": "Right Back",
+    "player_jersey_number": 29,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Luka",
+    "player_last_name": "Cindrić",
+    "player_position": "Centre Back",
+    "player_jersey_number": 25,
+    "player_nationality": "Croatia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "Veszprém HC",
+    "country": "Hungary",
+    "phone_number": "+36 30 5024547",
+    "email": "office@handballveszprem.hu",
+    "year_established": 1977,
+    "home_arena": "Veszprem Arena",
+    "league": "Nemzeti Bajnokság I",
+    "championships_won": 67,
+    "website": "www.handballveszprem.hu",
+    "light_team_color": "White",
+    "dark_team_color": "Red",
+    "head_coach_first": "Xavier",
+    "head_coach_last": "Pascual Fuertes",
+    "player_first_name": "Ludovic",
+    "player_last_name": "Fabregas",
+    "player_position": "Line Player",
+    "player_jersey_number": 89,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Veszprém HC",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Veszprem Arena"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Xavier Pascual Fuertes"
+    },
+    "url": "www.handballveszprem.hu"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Ignacio",
+    "player_last_name": "Biosca García",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 30,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Pierre-Alexis",
+    "player_last_name": "Favril",
+    "player_position": "Left Wing",
+    "player_jersey_number": 26,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Théo",
+    "player_last_name": "Avelange Demouge",
+    "player_position": "Right Wing",
+    "player_jersey_number": 9,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Thibaud",
+    "player_last_name": "Briet",
+    "player_position": "Left Back",
+    "player_jersey_number": 3,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Ayoub",
+    "player_last_name": "Abdi",
+    "player_position": "Right Back",
+    "player_jersey_number": 8,
+    "player_nationality": "Algeria",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Lucas",
+    "player_last_name": "De la Breteche",
+    "player_position": "Centre Back",
+    "player_jersey_number": 14,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "HBC Nantes",
+    "country": "France",
+    "phone_number": "+33 6 64612242",
+    "email": "jerome.champenois@hbcnantes.com",
+    "year_established": 1953,
+    "home_arena": "Palais des Sports de Beaulieu",
+    "league": "LNH Division 1",
+    "championships_won": 7,
+    "website": "www.hbcnantes.com",
+    "light_team_color": "White and purple",
+    "dark_team_color": "Black and purple",
+    "head_coach_first": "Gregory",
+    "head_coach_last": "Cojean",
+    "player_first_name": "Matej",
+    "player_last_name": "Gaber",
+    "player_position": "Line Player",
+    "player_jersey_number": 15,
+    "player_nationality": "Slovenia",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "HBC Nantes",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Palais des Sports de Beaulieu"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Gregory Cojean"
+    },
+    "url": "www.hbcnantes.com"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Jannick",
+    "player_last_name": "Green",
+    "player_position": "Goalkeeper",
+    "player_jersey_number": 16,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Mathieu",
+    "player_last_name": "Grebille",
+    "player_position": "Left Wing",
+    "player_jersey_number": 20,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "David",
+    "player_last_name": "Balaguer Romeu",
+    "player_position": "Right Wing",
+    "player_jersey_number": 19,
+    "player_nationality": "Spain",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Jacob",
+    "player_last_name": "Holm Tandrup",
+    "player_position": "Left Back",
+    "player_jersey_number": 32,
+    "player_nationality": "Denmark",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Victor",
+    "player_last_name": "Crenn",
+    "player_position": "Right Back",
+    "player_jersey_number": 33,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Dani",
+    "player_last_name": "Baijens",
+    "player_position": "Centre Back",
+    "player_jersey_number": 77,
+    "player_nationality": "Netherlands",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  },
+  {
+    "club_name": "Paris Saint-Germain Handball",
+    "country": "France",
+    "phone_number": "+33 (0)1 74 314000",
+    "email": "tomeyer@psg.fr",
+    "year_established": 1941,
+    "home_arena": "Stade Pierre de Coubertin",
+    "league": "LNH Division 1",
+    "championships_won": 24,
+    "website": "www.psg.fr",
+    "light_team_color": "White",
+    "dark_team_color": "Blue",
+    "head_coach_first": "Raul",
+    "head_coach_last": "Gonzalez Gutierrez",
+    "player_first_name": "Luka",
+    "player_last_name": "Karabatić",
+    "player_position": "Line Player",
+    "player_jersey_number": 22,
+    "player_nationality": "France",
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Paris Saint-Germain Handball",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Stade Pierre de Coubertin"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "Raul Gonzalez Gutierrez"
+    },
+    "url": "www.psg.fr"
+  }
 ]

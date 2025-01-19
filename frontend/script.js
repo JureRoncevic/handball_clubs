@@ -106,15 +106,11 @@ function downloadFile(data, filename, mimeType) {
     URL.revokeObjectURL(url); // Oslobađanje resursa
 }
 
-// Funkcija za formatiranje podataka prije nego što se preuzmu u JSON formatu
 function formatDataForDownload(data) {
-    const formattedData = []; // Novi niz koji će sadržavati formatirane podatke
-
-    // Mapiranje kluba prema njegovom imenu (ako još nije spremljeno)
+    const formattedData = [];
     const clubMap = {};
 
     data.forEach(item => {
-        // Ako klub još nije spremljen, kreiramo novi objekt za taj klub
         if (!clubMap[item.club_name]) {
             clubMap[item.club_name] = {
                 "ClubName": item.club_name,
@@ -134,11 +130,22 @@ function formatDataForDownload(data) {
                     "FirstName": item.head_coach_first,
                     "LastName": item.head_coach_last
                 },
-                "Players": [] // Inicijalizacija praznog niza za igrače
+                "Players": [],
+                "@context": "https://schema.org",
+                "@type": "SportsTeam",
+                name: item.club_name,
+                location: {
+                    "@type": "SportsActivityLocation",
+                    "name": item.home_arena
+                },
+                coach: {
+                    "@type": "Person",
+                    "name": `${item.head_coach_first} ${item.head_coach_last}`
+                },
+                url: item.website
             };
         }
 
-        // Dodavanje svakog igrača u listu igrača tog kluba
         clubMap[item.club_name].Players.push({
             "FirstName": item.player_first_name,
             "LastName": item.player_last_name,
@@ -148,13 +155,13 @@ function formatDataForDownload(data) {
         });
     });
 
-    // Dodavanje svih kluba u formatirani niz podataka
     for (const club in clubMap) {
         formattedData.push(clubMap[club]);
     }
 
-    return formattedData; // Vraća formatirane podatke
+    return formattedData;
 }
+
 
 // Pokretanje inicijalnog dohvaćanja podataka bez pretrage
 fetchData();

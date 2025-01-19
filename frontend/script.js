@@ -71,28 +71,51 @@ document.getElementById("exportJsonBtn").addEventListener("click", () => {
     downloadFile(json, "data.json", "application/json"); // Pozivanje funkcije za preuzimanje JSON datoteke
 });
 
-// Funkcija koja pretvara podatke u CSV format
 function convertToCSV(data) {
     // Definicija zaglavlja CSV datoteke
     const header = [
         "clubname", "country", "phonenumber", "email", "yearestablished", "homearena", 
         "league", "championshipswon", "website", "lightteamcolor", "darkteamcolor", 
         "headcoachfirstname", "headcoachlastname", "playerfirstname", "playerlastname", 
-        "playerposition", "playerjerseynumber", "playernationality"
+        "playerposition", "playerjerseynumber", "playernationality", "@context", "@type", 
+        "name", "location_name", "coach_name", "url"
     ];
 
-    // Mapiranje podataka u format redaka za CSV
+    // Mapiranje podataka u format redaka za CSV s JSON-LD obogaćivanjem
     const rows = data.map(item => [
-        item.club_name, item.country, item.phone_number, item.email, item.year_established,
-        item.home_arena, item.league, item.championships_won, item.website, item.light_team_color,
-        item.dark_team_color, item.head_coach_first, item.head_coach_last, item.player_first_name,
-        item.player_last_name, item.player_position, item.player_jersey_number, item.player_nationality
+        item.club_name,
+        item.country,
+        item.phone_number,
+        item.email,
+        item.year_established,
+        item.home_arena,
+        item.league,
+        item.championships_won,
+        item.website,
+        item.light_team_color,
+        item.dark_team_color,
+        item.head_coach_first,
+        item.head_coach_last,
+        item.player_first_name,
+        item.player_last_name,
+        item.player_position,
+        item.player_jersey_number,
+        item.player_nationality,
+        "https://schema.org", // @context
+        "SportsTeam",         // @type
+        item.club_name,       // name
+        item.home_arena,      // location.name
+        `${item.head_coach_first} ${item.head_coach_last}`, // coach.name
+        item.website          // url
     ]);
 
     // Spajanje zaglavlja i redaka u jednu CSV datoteku
     const csv = [header, ...rows].map(row => row.join(",")).join("\n");
     return csv; // Vraća generirani CSV string
 }
+
+
+
 
 // Funkcija za preuzimanje datoteke s podacima
 function downloadFile(data, filename, mimeType) {
